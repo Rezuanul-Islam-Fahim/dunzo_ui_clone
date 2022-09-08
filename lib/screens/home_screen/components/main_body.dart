@@ -103,7 +103,7 @@ class Body extends StatelessWidget {
               ],
               dotPosition: -40,
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 40),
             Padding(
               padding: const EdgeInsets.only(left: 15),
               child: Text(
