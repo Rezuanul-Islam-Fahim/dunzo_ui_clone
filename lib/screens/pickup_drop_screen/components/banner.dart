@@ -48,35 +48,36 @@ class Banner extends StatelessWidget {
         borderRadius: BorderRadius.circular(6),
         color: bgColor,
       ),
-      padding: EdgeInsets.only(right: 20),
+      padding: EdgeInsets.all(15),
       child: Row(
         children: [
           Expanded(
-            child: Container(
-              padding: EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                      color: textColor,
-                    ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    color: textColor,
                   ),
-                  SizedBox(height: 5),
-                  Text(
+                ),
+                SizedBox(height: 5),
+                Expanded(
+                  child: Text(
                     subtitle,
                     style: TextStyle(color: textColor),
+                    overflow: TextOverflow.fade,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
+          SizedBox(width: 5),
           Image.asset(
             imgUrl,
-            width: 70,
+            width: 60,
           ),
         ],
       ),
