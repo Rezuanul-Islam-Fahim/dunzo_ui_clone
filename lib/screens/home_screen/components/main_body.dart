@@ -54,17 +54,14 @@ class Body extends StatelessWidget {
                               SizedBox(height: 2),
                               Text(
                                 'will be delivered throughout the lockdown',
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  // fontWeight: FontWeight.w600,
-                                ),
+                                style: TextStyle(fontSize: 13),
                               ),
-                              SizedBox(height: 10),
-                              Text(
-                                'Delivery might be slower than usual due to high demand',
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  // fontWeight: FontWeight.w600,
+                              SizedBox(height: 5),
+                              Expanded(
+                                child: Text(
+                                  'Delivery might be slower than usual due to high demand',
+                                  style: TextStyle(fontSize: 11),
+                                  overflow: TextOverflow.fade,
                                 ),
                               ),
                             ],
@@ -72,12 +69,12 @@ class Body extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        width: 125,
+                        width: 90,
                         height: double.infinity,
                         child: Stack(
                           children: [
                             Positioned(
-                              top: -20,
+                              top: -25,
                               width: 220,
                               height: 220,
                               child: Container(
@@ -91,7 +88,7 @@ class Body extends StatelessWidget {
                               alignment: Alignment.center,
                               child: Image.asset(
                                 'assets/images/lightening.png',
-                                width: 70,
+                                width: 60,
                               ),
                             ),
                           ],

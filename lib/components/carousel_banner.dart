@@ -34,7 +34,7 @@ class _CarouselBannerState extends State<CarouselBanner> {
                 )
                 .toList(),
             options: CarouselOptions(
-              height: 130,
+              height: 140,
               aspectRatio: 16 / 9,
               viewportFraction: 0.8,
               initialPage: 0,
