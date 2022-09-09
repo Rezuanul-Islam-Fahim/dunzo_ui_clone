@@ -31,7 +31,6 @@ class Banner extends StatelessWidget {
           'assets/images/lightening.png',
         ),
       ],
-      dotPosition: -20,
     );
   }
 

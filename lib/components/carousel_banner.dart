@@ -1,12 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dunzo_ui_clone/colors.dart';
 import 'package:flutter/material.dart';
 
 class CarouselBanner extends StatefulWidget {
-  CarouselBanner(this.corouselList, {this.dotPosition});
+  CarouselBanner(this.corouselList);
 
   final List<Widget> corouselList;
-  final double dotPosition;
 
   @override
   State<CarouselBanner> createState() => _CarouselBannerState();
@@ -70,22 +68,6 @@ class _CarouselBannerState extends State<CarouselBanner> {
               );
             },
           ),
-          // children: widget.corouselList.map((entry) {
-          //   return GestureDetector(
-          //     onTap: () => _controller.animateToPage(entry.key),
-          //     child: Container(
-          //       width: 12.0,
-          //       height: 12.0,
-          //       margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
-          //       decoration: BoxDecoration(
-          //           shape: BoxShape.circle,
-          //           color: (Theme.of(context).brightness == Brightness.dark
-          //                   ? Colors.white
-          //                   : Colors.black)
-          //               .withOpacity(_current == entry.key ? 0.9 : 0.4)),
-          //     ),
-          //   );
-          // }).toList(),
         ),
       ],
     );

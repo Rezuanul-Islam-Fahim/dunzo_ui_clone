@@ -45,7 +45,6 @@ class MainBody extends StatelessWidget {
                   ),
                 ),
               ],
-              dotPosition: -20,
             ),
             SizedBox(height: 15),
             Container(

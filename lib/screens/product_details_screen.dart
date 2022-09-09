@@ -45,7 +45,6 @@ class ProductDetailsScreen extends StatelessWidget {
                     height: double.infinity,
                   ),
                 ],
-                dotPosition: -30,
               ),
             ),
             Container(

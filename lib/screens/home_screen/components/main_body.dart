@@ -101,7 +101,6 @@ class Body extends StatelessWidget {
                   ),
                 ),
               ],
-              dotPosition: -40,
             ),
             SizedBox(height: 40),
             Padding(
