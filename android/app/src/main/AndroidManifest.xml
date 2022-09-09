@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dunzo_ui_clone">
+    package="com.rezuanulfahim.dunzo_ui_clone">
    <application
         android:label="Dunzo UI Clone"
         android:icon="@mipmap/ic_launcher"
