@@ -1,16 +1,11 @@
-# dunzo_ui_clone
+# Dunzo UI Clone
 
-A new Flutter project.
+Dunzo Ui clone app built with Flutter.
 
-## Getting Started
+<img width="80%" src="screenshots/banner.png">
 
-This project is a starting point for a Flutter application.
+<!-- <a href="https://drive.google.com/file/d/1Xe3KQzI3Ylv0i8JnxtdvumtEiJZ_rtCy/view?usp=sharing"><img src="https://boostapk.com/wp-content/uploads/2020/08/fall-guys-android.png" width=200></a> -->
 
-A few resources to get you started if this is your first Flutter project:
+### Support this project
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![GitHub stars](https://img.shields.io/github/stars/rezuanul-islam-fahim/dunzo_ui_clone?style=social)](https://github.com/Rezuanul-Islam-Fahim/dunzo_ui_clone/stargazers) [![GitHub forks](https://img.shields.io/github/forks/rezuanul-islam-fahim/dunzo_ui_clone?style=social)](https://github.com/Rezuanul-Islam-Fahim/dunzo_ui_clone/network/members) [![GitHub watchers](https://img.shields.io/github/watchers/rezuanul-islam-fahim/dunzo_ui_clone?style=social)](https://github.com/Rezuanul-Islam-Fahim/dunzo_ui_clone/watchers)
