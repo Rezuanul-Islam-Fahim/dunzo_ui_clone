@@ -1,10 +1,10 @@
 # Dunzo UI Clone
 
-Dunzo Ui clone app built with Flutter.
+Dunzo UI clone app built with Dart & Flutter framework for Android & IOS.
 
 <img width="80%" src="screenshots/banner.png">
 
-<!-- <a href="https://drive.google.com/file/d/1Xe3KQzI3Ylv0i8JnxtdvumtEiJZ_rtCy/view?usp=sharing"><img src="https://boostapk.com/wp-content/uploads/2020/08/fall-guys-android.png" width=200></a> -->
+<a href="https://drive.google.com/file/d/1Crz3upbc9WML2XDicfVO50brSP1Owi-Q/view?usp=sharing"><img src="https://boostapk.com/wp-content/uploads/2020/08/fall-guys-android.png" width=200></a>
 
 ### Support this project
 
