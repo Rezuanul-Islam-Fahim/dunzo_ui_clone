@@ -12,4 +12,4 @@ Dunzo UI clone app built with Dart & Flutter framework for Android & IOS.
 
 ## Screenshots
 
-<img height="470px" src="screenshots/img1.jpg"> <img height="470px" src="screenshots/img2.jpg"> <img height="470px" src="screenshots/img3.jpg"> <img height="470px" src="screenshots/img4.jpg"> <img height="470px" src="screenshots/img5.jpg"> <img height="470px" src="screenshots/img6.jpg"> <img height="470px" src="screenshots/img7.jpg"> <img height="470px" src="screenshots/img8.jpg"> <img height="470px" src="screenshots/img9.jpg">
+<img height="490px" src="screenshots/img1.jpg"> &nbsp; <img height="490px" src="screenshots/img2.jpg"> &nbsp; <img height="490px" src="screenshots/img3.jpg"> &nbsp; <img height="490px" src="screenshots/img4.jpg"> &nbsp; <img height="490px" src="screenshots/img5.jpg"> &nbsp; <img height="490px" src="screenshots/img6.jpg"> &nbsp; <img height="490px" src="screenshots/img7.jpg"> &nbsp; <img height="490px" src="screenshots/img8.jpg"> &nbsp; <img height="490px" src="screenshots/img9.jpg">
