@@ -4,7 +4,7 @@ Dunzo UI clone app built with Dart & Flutter framework for Android & IOS.
 
 <img width="80%" src="screenshots/banner.png">
 
-<a href="https://drive.google.com/file/d/1Crz3upbc9WML2XDicfVO50brSP1Owi-Q/view?usp=sharing"><img src="https://boostapk.com/wp-content/uploads/2020/08/fall-guys-android.png" width=200></a>
+[![Live demo on Appetize](https://img.shields.io/badge/Live%20Demo-Appetize-blue?style=for-the-badge)](https://appetize.io/app/b_7hkz53g7fecouazyaj4vye4bcu)
 
 ### Support this project
 
