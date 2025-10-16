@@ -33,9 +33,9 @@ class StoreList extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       decoration: BoxDecoration(
-        color: secondaryColor.withOpacity(0.4),
+        color: secondaryColor.withValues(alpha: 0.4),
         border: Border.symmetric(
-          horizontal: BorderSide(color: Colors.grey[200]),
+          horizontal: BorderSide(color: Colors.grey[200]!),
         ),
       ),
       child: Row(
@@ -61,7 +61,7 @@ class StoreList extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: Colors.grey[800],
+                  color: Colors.grey[800]!,
                 ),
               ),
               SizedBox(height: 10),
@@ -111,8 +111,8 @@ class StoreList extends StatelessWidget {
 
     return InkWell(
       onTap: () => Navigator.of(context).pushNamed(
-        routeData['mainCategory']
-            ? routeData['showDetailedScreen']
+        (routeData['mainCategory'] ?? false)
+            ? (routeData['showDetailedScreen'] ?? false)
                 ? DetailedStoreScreen.routeName
                 : StoreScreen.routeName
             : StoreScreen.routeName,
@@ -141,7 +141,7 @@ class StoreList extends StatelessWidget {
                     '3.9 km BTM Stage 1',
                     style: TextStyle(
                       fontSize: 13,
-                      color: Colors.grey[600],
+                      color: Colors.grey[600]!,
                       fontFamily: 'Lato',
                     ),
                   ),
@@ -151,14 +151,14 @@ class StoreList extends StatelessWidget {
                       Icon(
                         Icons.watch_later_outlined,
                         size: 12,
-                        color: Colors.grey[600],
+                        color: Colors.grey[600]!,
                       ),
                       SizedBox(width: 5),
                       Text(
                         'Within 60 Minutes',
                         style: TextStyle(
                           fontSize: 13,
-                          color: Colors.grey[600],
+                          color: Colors.grey[600]!,
                           fontFamily: 'Lato',
                         ),
                       ),
@@ -181,7 +181,7 @@ class StoreList extends StatelessWidget {
                         ),
                       ],
                     ),
-                  if (showInfos && !routeData['mainCategory'])
+                  if (showInfos && !(routeData['mainCategory'] ?? false))
                     SizedBox(
                       width: MediaQuery.of(context).size.width -
                           thumbnail.preferredSize.width -
@@ -239,7 +239,7 @@ class StoreList extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 4, horizontal: 6),

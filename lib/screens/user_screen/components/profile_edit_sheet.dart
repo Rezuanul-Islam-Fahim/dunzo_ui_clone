@@ -114,7 +114,7 @@ class _ProfileEditSheetState extends State<ProfileEditSheet> {
     String title, {
     bool requiredField = false,
     // ignore: unused_element
-    IconData icon,
+    IconData? icon,
   }) {
     return Column(
       children: [
@@ -159,13 +159,11 @@ class _ProfileEditSheetState extends State<ProfileEditSheet> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(color: secondaryColor),
               ),
-              prefixIcon: icon != null
-                  ? Icon(
-                      icon,
-                      size: 20,
-                      color: Color(0xFFb7b9c8),
-                    )
-                  : null,
+              prefixIcon: Icon(
+                icon,
+                size: 20,
+                color: Color(0xFFb7b9c8),
+              ),
             ),
           ),
         ),

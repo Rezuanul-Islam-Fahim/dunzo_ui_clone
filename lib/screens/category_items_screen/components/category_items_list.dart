@@ -108,7 +108,7 @@ class CategoryItemsList extends StatelessWidget {
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
                     fontFamily: 'OpenSans',
-                    color: Colors.grey[700],
+                    color: Colors.grey[700]!,
                   ),
                 ),
                 SizedBox(height: 8),
@@ -119,7 +119,7 @@ class CategoryItemsList extends StatelessWidget {
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
                     fontFamily: 'OpenSans',
-                    color: Colors.grey[700],
+                    color: Colors.grey[700]!,
                   ),
                 ),
               ],
@@ -173,14 +173,14 @@ class CategoryItemsList extends StatelessWidget {
           InkWell(
             onTap: () {},
             borderRadius: BorderRadius.circular(30),
-            splashColor: Colors.grey[200],
+            splashColor: Colors.grey[200]!,
             child: Container(
               padding: EdgeInsets.symmetric(
                 vertical: 5,
                 horizontal: 8,
               ),
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey[300]),
+                border: Border.all(color: Colors.grey[300]!),
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Row(
@@ -211,3 +211,4 @@ class CategoryItemsList extends StatelessWidget {
     );
   }
 }
+

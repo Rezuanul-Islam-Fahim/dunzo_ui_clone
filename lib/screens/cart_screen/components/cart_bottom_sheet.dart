@@ -11,7 +11,7 @@ class CartBottomSheet extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey[100],
+            color: Colors.grey[100]!,
             offset: Offset(0, -1),
             blurRadius: 1,
           ),

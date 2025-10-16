@@ -19,7 +19,7 @@ class BottomSheetSection extends StatelessWidget {
             ),
             child: RichText(
               text: TextSpan(
-                style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                style: TextStyle(fontSize: 12, color: Colors.grey[600]!),
                 children: [
                   TextSpan(
                     text:
@@ -71,3 +71,4 @@ class BottomSheetSection extends StatelessWidget {
     );
   }
 }
+

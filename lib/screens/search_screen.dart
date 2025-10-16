@@ -33,7 +33,7 @@ class SearchScreen extends StatelessWidget {
                   prefixIcon: Padding(
                     padding: const EdgeInsets.only(left: 15, top: 11),
                     child: FaIcon(
-                      FontAwesomeIcons.search,
+                      FontAwesomeIcons.magnifyingGlass,
                       size: 16,
                       color: Colors.white,
                     ),

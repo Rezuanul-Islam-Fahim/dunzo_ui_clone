@@ -10,9 +10,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
-  ScrollController _scrollController;
-  AnimationController _animationController;
-  Animation<double> _fadeAnimation;
+  late ScrollController _scrollController;
+  late AnimationController _animationController;
+  late Animation<double> _fadeAnimation;
 
   bool get _isAppBarExpanded {
     return _scrollController.hasClients &&
@@ -32,10 +32,7 @@ class _HomeScreenState extends State<HomeScreen>
             : _animationController.reverse();
       });
     _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: Curves.easeInOut,
-      ),
+      CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
     );
     super.initState();
   }
@@ -46,11 +43,7 @@ class _HomeScreenState extends State<HomeScreen>
       controller: _scrollController,
       slivers: [
         CustomAppBar(_fadeAnimation),
-        SliverList(
-          delegate: SliverChildListDelegate([
-            Body(),
-          ]),
-        )
+        SliverList(delegate: SliverChildListDelegate([Body()])),
       ],
     );
   }

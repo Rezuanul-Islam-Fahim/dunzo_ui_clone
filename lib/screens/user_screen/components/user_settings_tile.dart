@@ -77,7 +77,7 @@ class UserSettingsTile extends StatelessWidget {
         onTap: () => Navigator.of(context).pushNamed(routeName),
         leading: CircleAvatar(
           radius: 16,
-          backgroundColor: Colors.grey[100],
+          backgroundColor: Colors.grey[100]!,
           child: Icon(Icons.ac_unit, size: 20),
         ),
         title: Text(
@@ -87,9 +87,10 @@ class UserSettingsTile extends StatelessWidget {
         trailing: Icon(
           Icons.arrow_forward_ios_rounded,
           size: 14,
-          color: Colors.grey[400],
+          color: Colors.grey[400]!,
         ),
       ),
     );
   }
 }
+

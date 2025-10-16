@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
       actions: [
         IconButton(
           icon: FaIcon(
-            FontAwesomeIcons.search,
+            FontAwesomeIcons.magnifyingGlass,
             size: 22,
             color: Colors.black54,
           ),
@@ -59,7 +59,7 @@ class CustomAppBar extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 15 - scrollingRate * 2,
                     fontWeight: FontWeight.bold,
-                    color: Colors.grey[600],
+                    color: Colors.grey[600]!,
                   ),
                 ),
               ],
@@ -105,7 +105,7 @@ class CustomAppBar extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            border: Border.all(color: Colors.grey[200]),
+            border: Border.all(color: Colors.grey[200]!),
           ),
           child: Align(
             alignment: Alignment.center,
@@ -122,3 +122,4 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 }
+

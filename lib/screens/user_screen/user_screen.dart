@@ -120,14 +120,14 @@ class _UserScreenState extends State<UserScreen> {
                       children: [
                         Icon(
                           Icons.phone,
-                          color: Colors.grey[500],
+                          color: Colors.grey[500]!,
                           size: 15,
                         ),
                         SizedBox(width: 10),
                         Text(
                           '+91 9434567683',
                           style: TextStyle(
-                            color: Colors.grey[600],
+                            color: Colors.grey[600]!,
                           ),
                         ),
                       ],
@@ -137,7 +137,7 @@ class _UserScreenState extends State<UserScreen> {
               ),
               Divider(
                 thickness: 8,
-                color: Colors.grey[200],
+                color: Colors.grey[200]!,
               ),
               UserSettingsTile(),
               Padding(
@@ -146,7 +146,7 @@ class _UserScreenState extends State<UserScreen> {
                   'Version 3.28.0.1',
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.grey[600],
+                    color: Colors.grey[600]!,
                   ),
                 ),
               ),
@@ -157,3 +157,4 @@ class _UserScreenState extends State<UserScreen> {
     );
   }
 }
+

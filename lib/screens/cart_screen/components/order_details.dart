@@ -14,7 +14,7 @@ class OrderDetails extends StatelessWidget {
               Text(
                 'FRESH CHICKEN',
                 style: TextStyle(
-                  color: Colors.grey[700],
+                  color: Colors.grey[700]!,
                   fontSize: 12,
                   fontFamily: 'Lato',
                 ),
@@ -73,7 +73,7 @@ class OrderDetails extends StatelessWidget {
                     Text(
                       '1 Kg',
                       style: TextStyle(
-                        color: Colors.grey[500],
+                        color: Colors.grey[500]!,
                         fontWeight: FontWeight.bold,
                         fontSize: 12,
                       ),
@@ -87,7 +87,7 @@ class OrderDetails extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: Colors.grey[300]),
+                  border: Border.all(color: Colors.grey[300]!),
                 ),
                 child: Row(
                   children: [
@@ -131,3 +131,4 @@ class OrderDetails extends StatelessWidget {
     );
   }
 }
+

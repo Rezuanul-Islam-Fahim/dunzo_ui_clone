@@ -12,7 +12,7 @@ class ConfirmOrderSheet extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey[100],
+            color: Colors.grey[100]!,
             offset: Offset(0, -1),
             blurRadius: 3,
           ),
@@ -23,11 +23,8 @@ class ConfirmOrderSheet extends StatelessWidget {
           Expanded(
             child: Row(
               children: [
-                Icon(
-                  Icons.info,
-                  size: 16,
-                  color: Theme.of(context).errorColor,
-                ),
+                Icon(Icons.info,
+                    size: 16, color: Theme.of(context).colorScheme.error),
                 SizedBox(width: 6),
                 Expanded(
                   child: Text(
@@ -69,3 +66,4 @@ class ConfirmOrderSheet extends StatelessWidget {
     );
   }
 }
+

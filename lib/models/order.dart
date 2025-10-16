@@ -1,11 +1,9 @@
-import 'package:flutter/foundation.dart';
-
 class Order {
   const Order({
-    @required this.orderId,
-    @required this.dateTime,
-    @required this.amount,
-    @required this.status,
+    required this.orderId,
+    required this.dateTime,
+    required this.amount,
+    required this.status,
   });
 
   final DateTime dateTime;
@@ -14,9 +12,4 @@ class Order {
   final double amount;
 }
 
-enum OrderStatus {
-  Completed,
-  Processing,
-  Pending,
-  Cancelled,
-}
+enum OrderStatus { Completed, Processing, Pending, Cancelled }

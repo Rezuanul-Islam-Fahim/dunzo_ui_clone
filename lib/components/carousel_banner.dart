@@ -11,7 +11,6 @@ class CarouselBanner extends StatefulWidget {
 }
 
 class _CarouselBannerState extends State<CarouselBanner> {
-  final CarouselController _controller = CarouselController();
   int _currentIndex = 0;
 
   @override
@@ -21,7 +20,6 @@ class _CarouselBannerState extends State<CarouselBanner> {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: CarouselSlider(
-            carouselController: _controller,
             items: widget.corouselList
                 .map(
                   (slide) => Container(
@@ -45,29 +43,24 @@ class _CarouselBannerState extends State<CarouselBanner> {
               autoPlayAnimationDuration: Duration(milliseconds: 800),
               autoPlayCurve: Curves.fastOutSlowIn,
               scrollDirection: Axis.horizontal,
-              onPageChanged: (index, reason) => setState(
-                () => _currentIndex = index,
-              ),
+              onPageChanged: (index, reason) =>
+                  setState(() => _currentIndex = index),
             ),
           ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: List.generate(
-            widget.corouselList.length,
-            (int index) {
-              return Container(
-                width: 10,
-                height: 10,
-                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color:
-                      _currentIndex == index ? Colors.black45 : Colors.black12,
-                ),
-              );
-            },
-          ),
+          children: List.generate(widget.corouselList.length, (int index) {
+            return Container(
+              width: 10,
+              height: 10,
+              margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: _currentIndex == index ? Colors.black45 : Colors.black12,
+              ),
+            );
+          }),
         ),
       ],
     );

@@ -20,7 +20,7 @@ class ProductSlider extends StatelessWidget {
                   child: DecoratedBox(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      border: Border.all(color: Colors.grey[300]),
+                      border: Border.all(color: Colors.grey[300]!),
                     ),
                     child: SizedBox(
                       width: 140,
@@ -37,10 +37,7 @@ class ProductSlider extends StatelessWidget {
                   width: 140,
                   child: Text(
                     'Organic Era',
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                   ),
                 ),
                 SizedBox(height: 2),

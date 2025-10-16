@@ -32,7 +32,7 @@ class CustomAppBar extends StatelessWidget {
           opacity: _fadeAnimation,
           child: IconButton(
             icon: FaIcon(
-              FontAwesomeIcons.search,
+              FontAwesomeIcons.magnifyingGlass,
               size: 26,
               color: secondaryColor,
             ),
@@ -59,7 +59,7 @@ class CustomAppBar extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Color(0xFFFFFFFF),
                   borderRadius: BorderRadius.circular(5),
-                  border: Border.all(color: Colors.grey[300]),
+                  border: Border.all(color: Colors.grey[300]!),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black12,
@@ -71,7 +71,7 @@ class CustomAppBar extends StatelessWidget {
                 child: Row(
                   children: [
                     FaIcon(
-                      FontAwesomeIcons.search,
+                      FontAwesomeIcons.magnifyingGlass,
                       size: 18,
                       color: Colors.black54,
                     ),
@@ -94,3 +94,4 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 }
+

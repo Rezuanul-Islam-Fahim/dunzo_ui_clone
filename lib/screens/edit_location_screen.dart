@@ -208,7 +208,7 @@ class EditLocationScreen extends StatelessWidget {
   }
 
   // ignore: unused_element
-  Widget _buildField(String title, IconData icon, {Color color}) {
+  Widget _buildField(String title, IconData icon, {Color? color}) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
@@ -221,7 +221,7 @@ class EditLocationScreen extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-                  color: color != null ? color : Colors.black54,
+                  color: color,
                   fontSize: 12,
                   fontFamily: 'Lato',
                 ),

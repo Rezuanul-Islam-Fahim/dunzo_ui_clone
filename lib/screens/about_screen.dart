@@ -48,7 +48,7 @@ class AboutScreen extends StatelessWidget {
           trailing: Icon(
             Icons.arrow_forward_ios_rounded,
             size: 14,
-            color: Colors.grey[400],
+            color: Colors.grey[400]!,
           ),
         ),
         Divider(),
@@ -56,3 +56,4 @@ class AboutScreen extends StatelessWidget {
     );
   }
 }
+

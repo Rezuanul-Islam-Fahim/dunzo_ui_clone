@@ -2,7 +2,7 @@ import 'package:dunzo_ui_clone/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomCheckBox extends StatefulWidget {
-  CustomCheckBox({Key key}) : super(key: key);
+  const CustomCheckBox({Key? key}) : super(key: key);
 
   @override
   _CustomCheckBoxState createState() => _CustomCheckBoxState();
@@ -33,7 +33,7 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
         value: checkedValue,
         onChanged: (newValue) {
           setState(() {
-            checkedValue = newValue;
+            checkedValue = newValue!;
           });
         },
         activeColor: secondaryColor,

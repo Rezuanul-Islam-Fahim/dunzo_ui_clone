@@ -63,7 +63,7 @@ class CategoryGrid extends StatelessWidget {
         borderRadius: BorderRadius.circular(3),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey[200],
+            color: Colors.grey[200]!,
             offset: Offset(0, 1),
             spreadRadius: 1,
             blurRadius: 1,
@@ -105,3 +105,4 @@ class CategoryGrid extends StatelessWidget {
     );
   }
 }
+

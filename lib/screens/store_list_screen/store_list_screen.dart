@@ -12,9 +12,9 @@ class StoreListScreen extends StatefulWidget {
 
 class _StoreListScreenState extends State<StoreListScreen>
     with SingleTickerProviderStateMixin {
-  ScrollController _scrollController;
-  AnimationController _animationController;
-  Animation<double> _fadeAnimation;
+  late ScrollController _scrollController;
+  late AnimationController _animationController;
+  late Animation<double> _fadeAnimation;
 
   bool get _isAppBarExpanded {
     return _scrollController.hasClients &&
@@ -34,17 +34,15 @@ class _StoreListScreenState extends State<StoreListScreen>
             : _animationController.reverse();
       });
     _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: Curves.easeInOut,
-      ),
+      CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
     );
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    Map<String, bool> routeData = ModalRoute.of(context).settings.arguments;
+    Map<String, bool> routeData =
+        (ModalRoute.of(context)?.settings.arguments ?? {}) as Map<String, bool>;
 
     return Scaffold(
       body: Scrollbar(
@@ -54,10 +52,8 @@ class _StoreListScreenState extends State<StoreListScreen>
           slivers: [
             CustomAppBar(_fadeAnimation),
             SliverList(
-              delegate: SliverChildListDelegate([
-                MainBody(routeData),
-              ]),
-            )
+              delegate: SliverChildListDelegate([MainBody(routeData)]),
+            ),
           ],
         ),
       ),
