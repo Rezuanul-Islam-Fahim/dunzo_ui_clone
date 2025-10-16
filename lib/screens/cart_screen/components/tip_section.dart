@@ -61,7 +61,7 @@ class TipSection extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
         color: Color(0xFFFFFFFF),
-        border: Border.all(color: Colors.grey[300]),
+        border: Border.all(color: Colors.grey[300]!),
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
@@ -88,3 +88,4 @@ class TipSection extends StatelessWidget {
     );
   }
 }
+

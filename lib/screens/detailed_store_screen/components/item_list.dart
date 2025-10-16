@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'item.dart';
 
 class ItemList extends StatelessWidget {
-  ItemList({@required this.title, @required this.itemlength});
+  const ItemList({required this.title, required this.itemlength});
 
   final String title;
   final int itemlength;

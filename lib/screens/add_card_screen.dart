@@ -8,7 +8,7 @@ class AddCardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: primaryColor.withOpacity(0.8),
+        backgroundColor: primaryColor.withValues(alpha: 0.8),
         elevation: 0,
         title: Text(
           'Credit/Debit Card',

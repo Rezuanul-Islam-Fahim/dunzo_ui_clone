@@ -16,7 +16,7 @@ class PaymentDetails extends StatelessWidget {
               Text(
                 'Payment Details',
                 style: TextStyle(
-                  color: Colors.grey[600],
+                  color: Colors.grey[600]!,
                   // fontSize: 13,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Lato',
@@ -80,3 +80,4 @@ class PaymentDetails extends StatelessWidget {
     );
   }
 }
+

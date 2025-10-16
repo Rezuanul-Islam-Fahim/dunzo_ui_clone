@@ -25,7 +25,7 @@ class CustomAppBar extends StatelessWidget {
           Text(
             'BTM Stage 1',
             style: TextStyle(
-              color: Colors.grey[600],
+              color: Colors.grey[600]!,
               fontSize: 13,
               fontWeight: FontWeight.bold,
             ),
@@ -53,7 +53,7 @@ class CustomAppBar extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color(0xFFFFFFFF),
               borderRadius: BorderRadius.circular(5),
-              border: Border.all(color: Colors.grey[300]),
+              border: Border.all(color: Colors.grey[300]!),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black12,
@@ -65,7 +65,7 @@ class CustomAppBar extends StatelessWidget {
             child: Row(
               children: [
                 FaIcon(
-                  FontAwesomeIcons.search,
+                  FontAwesomeIcons.magnifyingGlass,
                   size: 18,
                   color: Colors.black54,
                 ),
@@ -97,7 +97,7 @@ class CustomAppBar extends StatelessWidget {
                   Icon(
                     Icons.watch_later,
                     size: 18,
-                    color: Colors.indigo.withOpacity(0.3),
+                    color: Colors.indigo.withValues(alpha: 0.3),
                   ),
                   SizedBox(width: 4),
                   Text(

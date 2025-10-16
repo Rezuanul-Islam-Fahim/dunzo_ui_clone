@@ -7,7 +7,7 @@ import 'dunzo_cash_screen.dart';
 import 'search_screen.dart';
 
 class LandingScreen extends StatefulWidget {
-  LandingScreen({Key key}) : super(key: key);
+  const LandingScreen({Key? key}) : super(key: key);
 
   @override
   _LandingScreenState createState() => _LandingScreenState();

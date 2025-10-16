@@ -46,9 +46,9 @@ class LocationScreen extends StatelessWidget {
                       prefixIcon: Padding(
                         padding: const EdgeInsets.only(top: 10, left: 16),
                         child: FaIcon(
-                          FontAwesomeIcons.search,
+                          FontAwesomeIcons.magnifyingGlass,
                           size: 18,
-                          color: Colors.grey[500],
+                          color: Colors.grey[500]!,
                         ),
                       ),
                     ),
@@ -65,7 +65,7 @@ class LocationScreen extends StatelessWidget {
                     Text(
                       'OR',
                       style: TextStyle(
-                        color: Colors.grey[500],
+                        color: Colors.grey[500]!,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
                       ),
@@ -112,7 +112,7 @@ class LocationScreen extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(Icons.home, color: Colors.grey[500], size: 20),
+                    Icon(Icons.home, color: Colors.grey[500]!, size: 20),
                     SizedBox(width: 8),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,7 +130,7 @@ class LocationScreen extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
-                            color: Colors.grey[500],
+                            color: Colors.grey[500]!,
                           ),
                         ),
                       ],
@@ -145,3 +145,4 @@ class LocationScreen extends StatelessWidget {
     );
   }
 }
+

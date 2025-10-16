@@ -38,16 +38,12 @@ class MainOrderScreen extends StatelessWidget {
     switch (status) {
       case OrderStatus.Completed:
         return Color(0xFF86c55c);
-        break;
       case OrderStatus.Processing:
         return Color(0xFF02bcf5);
-        break;
       case OrderStatus.Pending:
         return Color(0xFFc99800);
-        break;
       case OrderStatus.Cancelled:
         return Color(0xFFeb383e);
-        break;
     }
   }
 
@@ -56,16 +52,12 @@ class MainOrderScreen extends StatelessWidget {
     switch (status) {
       case OrderStatus.Completed:
         return 'Completed';
-        break;
       case OrderStatus.Processing:
         return 'Processing';
-        break;
       case OrderStatus.Pending:
         return 'Pending';
-        break;
       case OrderStatus.Cancelled:
         return 'Cancelled';
-        break;
     }
   }
 

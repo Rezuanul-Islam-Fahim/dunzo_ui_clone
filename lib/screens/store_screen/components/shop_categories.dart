@@ -78,7 +78,7 @@ class ShopCategories extends StatelessWidget {
               borderRadius: BorderRadius.circular(5),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey[200],
+                  color: Colors.grey[200]!,
                   offset: Offset(1, 1),
                   spreadRadius: 1,
                   blurRadius: 2,
@@ -151,3 +151,4 @@ class ShopCategories extends StatelessWidget {
     );
   }
 }
+

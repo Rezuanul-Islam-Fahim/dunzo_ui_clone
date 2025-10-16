@@ -40,7 +40,7 @@ class RecommendedFoods extends StatelessWidget {
                   margin: EdgeInsets.only(right: 10),
                   padding: EdgeInsets.only(left: 8, top: 5, right: 8),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey[100]),
+                    border: Border.all(color: Colors.grey[100]!),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -68,7 +68,7 @@ class RecommendedFoods extends StatelessWidget {
                       Text(
                         '1 Kg',
                         style: TextStyle(
-                          color: Colors.grey[600],
+                          color: Colors.grey[600]!,
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
                         ),
@@ -88,14 +88,14 @@ class RecommendedFoods extends StatelessWidget {
                           InkWell(
                             onTap: () {},
                             borderRadius: BorderRadius.circular(30),
-                            splashColor: Colors.grey[200],
+                            splashColor: Colors.grey[200]!,
                             child: Container(
                               padding: EdgeInsets.symmetric(
                                 vertical: 5,
                                 horizontal: 8,
                               ),
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.grey[300]),
+                                border: Border.all(color: Colors.grey[300]!),
                                 borderRadius: BorderRadius.circular(30),
                               ),
                               child: Row(
@@ -135,3 +135,4 @@ class RecommendedFoods extends StatelessWidget {
     );
   }
 }
+

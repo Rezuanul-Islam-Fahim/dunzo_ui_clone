@@ -37,19 +37,19 @@ class NotificationScreen extends StatelessWidget {
               subtitle:
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat metus at pulvinar dictum.',
             ),
-            Divider(thickness: 8, color: Colors.grey[100]),
+            Divider(thickness: 8, color: Colors.grey[100]!),
             SwitchBoxTile(
               title: 'Order and Support',
               subtitle:
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat metus at pulvinar dictum.',
             ),
-            Divider(thickness: 8, color: Colors.grey[100]),
+            Divider(thickness: 8, color: Colors.grey[100]!),
             SwitchBoxTile(
               title: 'Order and Support',
               subtitle:
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat metus at pulvinar dictum.',
             ),
-            Divider(thickness: 8, color: Colors.grey[100]),
+            Divider(thickness: 8, color: Colors.grey[100]!),
             SizedBox(height: 100),
           ],
         ),
@@ -62,7 +62,7 @@ class NotificationScreen extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.grey[100],
+              color: Colors.grey[100]!,
               offset: Offset(0, -1),
               blurRadius: 1,
             ),
@@ -72,10 +72,7 @@ class NotificationScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Please note:',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
+            Text('Please note:', style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 5),
             Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat metus at pulvinar dictum.',
@@ -93,7 +90,7 @@ class NotificationScreen extends StatelessWidget {
 }
 
 class SwitchBoxTile extends StatefulWidget {
-  SwitchBoxTile({this.title, this.subtitle});
+  const SwitchBoxTile({required this.title, required this.subtitle});
 
   final String title;
   final String subtitle;
@@ -110,7 +107,7 @@ class _SwitchBoxTileState extends State<SwitchBoxTile> {
     return Theme(
       data: ThemeData(
         textTheme: ThemeData.light().textTheme.copyWith(
-              headline5: TextStyle(color: Colors.black),
+              headlineSmall: TextStyle(color: Colors.black),
             ),
       ),
       child: Container(
@@ -132,7 +129,7 @@ class _SwitchBoxTileState extends State<SwitchBoxTile> {
             ),
           ),
           trailing: CupertinoSwitch(
-            activeColor: defaultGreenColor,
+            activeTrackColor: defaultGreenColor,
             value: switchValue,
             onChanged: (value) {
               setState(() {

@@ -113,7 +113,7 @@ class _SupportPanelState extends State<SupportPanel> {
                     horizontal: 10,
                   ),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey[300]),
+                    border: Border.all(color: Colors.grey[300]!),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: Text(
@@ -134,3 +134,4 @@ class _SupportPanelState extends State<SupportPanel> {
     );
   }
 }
+

@@ -68,14 +68,14 @@ class ProductDetailsScreen extends StatelessWidget {
                       InkWell(
                         onTap: () {},
                         borderRadius: BorderRadius.circular(30),
-                        splashColor: Colors.grey[200],
+                        splashColor: Colors.grey[200]!,
                         child: Container(
                           padding: EdgeInsets.symmetric(
                             vertical: 5,
                             horizontal: 8,
                           ),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey[300]),
+                            border: Border.all(color: Colors.grey[300]!),
                             borderRadius: BorderRadius.circular(30),
                           ),
                           child: Row(
@@ -108,7 +108,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     '70 GSM',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.grey[600],
+                      color: Colors.grey[600]!,
                       fontFamily: 'Lato',
                     ),
                   ),
@@ -142,7 +142,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh est, condimentum vitae volutpat',
                     style: TextStyle(
-                      color: Colors.grey[600],
+                      color: Colors.grey[600]!,
                       fontFamily: 'Lato',
                     ),
                   ),
@@ -166,7 +166,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   Text(
                     'Bangladesh',
                     style: TextStyle(
-                      color: Colors.grey[600],
+                      color: Colors.grey[600]!,
                       fontSize: 13,
                     ),
                   ),
@@ -174,7 +174,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh est, condimentum vitae volutpat at, dapibus sit amet tortor. Suspendisse sagittis vestibulum elit vitae sodales. Integer scelerisque ante velit, non feugiat odio accumsan id. Mauris lobortis lectus sit amet quam dignissim, sit amet placerat neque dictum. Sed aliquet mi lacus, eu eleifend mauris tempus et. Donec tellus elit, efficitur eu ante eu, tincidunt fringilla lorem. Duis a enim arcu. Mauris aliquam eleifend diam eget vehicula. Maecenas eget turpis ullamcorper, fringilla ligula ac, tincidunt urna. Curabitur varius eget eros eget sagittis. Nulla tincidunt, dolor eget sollicitudin feugiat, ipsum velit viverra eros, eget mattis sapien mauris nec tortor.',
                     style: TextStyle(
-                      color: Colors.grey[600],
+                      color: Colors.grey[600]!,
                       fontFamily: 'Lato',
                     ),
                   ),
@@ -187,3 +187,4 @@ class ProductDetailsScreen extends StatelessWidget {
     );
   }
 }
+

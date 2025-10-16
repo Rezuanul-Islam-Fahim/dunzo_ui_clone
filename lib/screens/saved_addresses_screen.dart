@@ -46,7 +46,7 @@ class SavedAddressesScreen extends StatelessWidget {
         padding: EdgeInsets.all(5),
         child: Card(
           elevation: 3,
-          shadowColor: Colors.grey[200],
+          shadowColor: Colors.grey[200]!,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(4),
             child: Container(
@@ -117,7 +117,7 @@ class SavedAddressesScreen extends StatelessWidget {
                             child: Icon(
                               Icons.edit,
                               size: 12,
-                              color: Colors.grey[400],
+                              color: Colors.grey[400]!,
                             ),
                           ),
                         ),
@@ -133,3 +133,4 @@ class SavedAddressesScreen extends StatelessWidget {
     );
   }
 }
+

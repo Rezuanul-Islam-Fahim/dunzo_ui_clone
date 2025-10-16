@@ -33,7 +33,7 @@ class StoreSearchScreen extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.fromLTRB(30, 0, 30, 10),
             child: Material(
-              shadowColor: Colors.grey[50],
+              shadowColor: Colors.grey[50]!,
               elevation: 2,
               borderRadius: BorderRadius.circular(5),
               child: ClipRRect(
@@ -50,14 +50,14 @@ class StoreSearchScreen extends StatelessWidget {
                       hintStyle: TextStyle(
                         fontSize: 14,
                         fontFamily: 'Lato',
-                        color: Colors.grey[500],
+                        color: Colors.grey[500]!,
                       ),
                       prefixIcon: Padding(
                         padding: const EdgeInsets.symmetric(
                           vertical: 13,
                           horizontal: 15,
                         ),
-                        child: FaIcon(FontAwesomeIcons.search, size: 16),
+                        child: FaIcon(FontAwesomeIcons.magnifyingGlass, size: 16),
                       ),
                     ),
                   ),
@@ -70,3 +70,4 @@ class StoreSearchScreen extends StatelessWidget {
     );
   }
 }
+

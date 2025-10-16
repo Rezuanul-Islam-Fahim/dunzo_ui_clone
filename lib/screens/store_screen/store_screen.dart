@@ -50,7 +50,7 @@ class _StoreScreenState extends State<StoreScreen> {
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
                         fontFamily: 'OpenSans',
-                        color: Colors.grey[700],
+                        color: Colors.grey[700]!,
                       ),
                     ),
                     SizedBox(height: 8),
@@ -61,7 +61,7 @@ class _StoreScreenState extends State<StoreScreen> {
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
                         fontFamily: 'OpenSans',
-                        color: Colors.grey[700],
+                        color: Colors.grey[700]!,
                       ),
                     ),
                   ],
@@ -74,3 +74,4 @@ class _StoreScreenState extends State<StoreScreen> {
     );
   }
 }
+

@@ -26,7 +26,7 @@ class MainBody extends StatelessWidget {
               hintStyle: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: Colors.grey[500],
+                color: Colors.grey[500]!,
               ),
             ),
           ),
@@ -54,7 +54,7 @@ class MainBody extends StatelessWidget {
                       title,
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.grey[600],
+                        color: Colors.grey[600]!,
                       ),
                     ),
                   ),
@@ -79,11 +79,11 @@ class MainBody extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
-                  color: Colors.grey[600],
+                  color: Colors.grey[600]!,
                 ),
               ),
               SizedBox(height: 2),
-              Divider(thickness: 2, color: Colors.grey[200]),
+              Divider(thickness: 2, color: Colors.grey[200]!),
             ],
           ),
         ),
@@ -91,3 +91,4 @@ class MainBody extends StatelessWidget {
     );
   }
 }
+

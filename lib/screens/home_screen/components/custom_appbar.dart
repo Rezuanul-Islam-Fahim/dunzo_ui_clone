@@ -32,7 +32,7 @@ class CustomAppBar extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             children: [
-              FaIcon(FontAwesomeIcons.mapMarkerAlt, size: 20),
+              FaIcon(FontAwesomeIcons.locationDot, size: 20),
               SizedBox(width: 8),
               Expanded(
                 child: Text(
@@ -52,7 +52,7 @@ class CustomAppBar extends StatelessWidget {
           child: Container(
             width: 35,
             child: IconButton(
-              icon: FaIcon(FontAwesomeIcons.search, size: 18),
+              icon: FaIcon(FontAwesomeIcons.magnifyingGlass, size: 18),
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
               onPressed: () => Navigator.of(context).pushNamed(
@@ -81,7 +81,7 @@ class CustomAppBar extends StatelessWidget {
             icon: Stack(
               clipBehavior: Clip.none,
               children: [
-                FaIcon(FontAwesomeIcons.shoppingCart, size: 18),
+                FaIcon(FontAwesomeIcons.cartShopping, size: 18),
                 Positioned(
                   right: -7,
                   top: -4,
@@ -129,7 +129,7 @@ class CustomAppBar extends StatelessWidget {
                 child: Row(
                   children: [
                     FaIcon(
-                      FontAwesomeIcons.search,
+                      FontAwesomeIcons.magnifyingGlass,
                       size: 18,
                       color: Colors.white,
                     ),
